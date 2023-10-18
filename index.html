@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency prices</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="flex">
+        <div class="header-left flex">
+            <div class="flex mr-12">
+                <span>
+                    Cryptos:
+                </span>
+                <span class="text-blue">
+                    1.8M+
+                </span>
+            </div>
+
+            <div class="flex mr-12">
+                <span>
+                    Exchanges:
+                </span>
+                <span class="text-blue">
+                    666
+                </span>
+            </div>
+
+            <div class="flex mr-12">
+                <span>
+                    Market Cap:
+                </span>
+                <span class="text-blue">
+                    $1.08T <span class="text-red"> 1.75%</span>
+                </span>
+            </div>
+
+            <div class="flex mr-12">
+                <span>
+                    24h Vol:
+                </span>
+                <span class="text-blue">
+                    $38.04B <span class="text-red"> 9.68%</span>
+                </span>
+            </div>
+
+            <div class="flex mr-12">
+                <span>
+                    Dominance:
+                </span>
+                <span class="text-blue">
+                    BTC: 49.3% ETH: 18.4%
+                </span>
+            </div>
+
+            <div class="flex mr-12">
+                <span>
+                    ETH Gas:
+                </span>
+                <span class="text-blue">
+                    15 Gwei
+                </span>
+            </div>
+
+            <div class="flex mr-12">
+                <span>
+                    Fear & Greed:
+                </span>
+                <span class="text-blue">
+                    44/100
+                </span>
+            </div>
+        </div>
+        <div class="header-right flex">
+
+            <div class="header-buttons flex">
+                <div class="mr-12">
+                    English <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="flex mr-12 convertor">
+                    <img src="./images/USD.svg" alt="usd">
+                    USD
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="mr-12">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+
+            </div>
+
+            <div class="user flex">
+                <div class="diamond">
+                    <img src="./images/diamond-icon.svg" alt="diamond">
+                </div>
+
+                <button class="login">
+                    Log In
+                </button>
+                <button class="signup">
+                    Sign Up
+                </button>
+                <div class="gif">
+                    <img src="./images/signupGift.gif" alt="gift">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="headerV2 flex">
+        <div class="headerV2-left flex">
+            <div class="logo">
+                <img src="./images/Coinmarketcap_svg_logo.svg.png" alt="logo">
+            </div>
+            <div class="menu">
+                <ul class="flex">
+                    <li>Cryptocurrencies</li>
+                    <li>Exchanges</li>
+                    <li>Community</li>
+                    <li>Products</li>
+                    <li>Learn</li>
+                </ul>
+            </div>
+        </div>
+        <div class="headerV2-right flex">
+            <div class="headerV2-right-icons">
+                <i class="fa-solid fa-star"></i> <span>Watchlist</span>
+            </div>
+            <div class="headerV2-right-icons">
+                <i class="fa-solid fa-chart-pie"></i> <span>Portfolio</span>
+            </div>
+            <div class="search">
+                <input type="text" name="search" placeholder="Search">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <main>
+        <div class="container flex">
+            <div class="main-head">
+                <h1>Today's Cryptocurrency Prices by Market Cap</h1>
+                <p>The global crypto market cap is <span>$1.08T</span>, a 0.06% increase over the last day.
+                </p>
+            </div>
+            <div>
+                <button onclick="risingCoins()" class="filter-button">
+                    Rising Coins
+                </button>
+                <button onclick="decreasingCoins()" class="filter-button">
+                    Decreasing Coins
+                </button>
+                <button onclick="whole()" class="filter-button">
+                    Clear
+                </button>
+            </div>
+        </div>
+        <div class="table flex">
+            <div class="star p-10">
+
+            </div>
+            <div class="crypto-rank p-10">
+                #
+            </div>
+            <div class="crypto-icon p-10">
+                Icon
+            </div>
+            <div class="crypto-name p-10">
+                Name
+            </div>
+            <div class="crypto-price p-10">
+                Price
+            </div>
+            <div class="crypto-hourly-change p-10">
+                1h%
+            </div>
+
+            <div class="crypto-market-cap p-10">
+                Market Cap
+            </div>
+            <div class="crypto-color p-10">
+                Color of Coin
+            </div>
+        </div>
+        <div id="table-list">
+
+            <div class="tableJS flex">
+                <h1> Loading, please wait... </h1>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="./javascript.js"></script>
+</body>
+
+</html>

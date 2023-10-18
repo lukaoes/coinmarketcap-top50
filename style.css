@@ -1,0 +1,384 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    justify-content: space-between;
+    height: 52px;
+    padding: 8px 24px;
+    border-bottom: 1px solid lightgray;
+}
+
+.mr-12 {
+    margin-right: 12px;
+}
+
+.header-left,
+.header-right {
+    height: 36px;
+    align-items: center;
+}
+
+.header-left span {
+    font-size: 11px;
+    color: #616E85;
+    font-weight: 700;
+}
+
+.text-blue {
+    color: #3861FB !important;
+    cursor: pointer;
+}
+
+.text-red {
+    color: #EA3943 !important;
+    cursor: pointer;
+}
+
+.header-right {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.header-buttons {
+    border-right: 1px solid lightgray;
+}
+
+.header-buttons img {
+    height: 15px;
+}
+
+.header-buttons i {
+    font-size: 20px;
+}
+
+.fa-angle-down {
+    font-size: 12px !important;
+}
+
+.convertor {
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-buttons>div:hover {
+    background-color: #F8FAFD;
+    cursor: pointer;
+}
+
+.user {
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    position: relative;
+}
+
+.diamond {
+    padding: 8px 6px 6px;
+}
+
+.diamond img {
+    width: 20px;
+
+}
+
+.user button {
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login {
+    margin: 0px 8px 0px 6px;
+    font-weight: 700;
+    border: 1px solid #3861fb;
+    color: #3861fb;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.login:hover {
+    background-color: #F8FAFD;
+}
+
+.signup {
+    background-color: rgb(56, 97, 251);
+    color: #fff;
+    border: 1px solid rgb(56, 97, 251);
+    transition: all 0.2s ease-in-out;
+}
+
+.signup:hover {
+    background-color: rgb(59, 56, 251);
+}
+
+.gif {
+    position: absolute;
+    right: -24px;
+    top: -15px;
+}
+
+/****** HEADER V2 *******/
+
+.headerV2 {
+    height: 71px;
+    align-items: center;
+    padding: 0 24px;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+.headerV2-left {
+    align-items: center;
+}
+
+.logo {
+    margin-right: 16px;
+
+}
+
+.logo img {
+    width: 168px;
+}
+
+.headerV2 ul li {
+    font-size: 14px;
+    padding: 24px 16px;
+    color: #0D1421;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.headerV2 ul li:hover {
+    color: #3861fb;
+}
+
+.headerV2-right {
+    font-size: 12px;
+}
+
+.headerV2-right-icons {
+    font-size: 14px;
+    color: #A6B0C3;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.headerV2-right-icons span {
+    color: #0D1421;
+}
+
+.headerV2-right-icons:hover {
+    background-color: rgb(248, 250, 253);
+    border-radius: 8px;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    width: 260px;
+    height: 38px;
+    padding: 8px 8px 8px 35px;
+    margin-left: 8px;
+    background-color: #EFF2F5;
+    color: #A6B0C3;
+    border-radius: 8px;
+    border: 0;
+}
+
+.search-icon {
+    position: absolute;
+    color: #A6B0C3;
+    font-size: 15px;
+    top: 9px;
+    left: 20px;
+}
+
+/* MAIN */
+
+.container {
+    width: 1402px;
+    padding: 0 16px;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-button {
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(56, 97, 251);
+    color: #fff;
+    border: 1px solid rgb(56, 97, 251);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.filter-button:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: rgb(59, 56, 251);
+}
+
+.hidden {
+    display: none;
+}
+
+.main-head {
+    padding: 24px 0;
+}
+
+.main-head h1 {
+    font-size: 24px;
+}
+
+.main-head h4 {
+    font-size: 14px;
+}
+
+.main-head span {
+    font-weight: 700;
+    color: #58667E;
+}
+
+/* TABLE SIZES */
+
+.p-10 {
+    padding: 10px;
+}
+
+.table {
+    width: 1402px;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgray;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.star {
+    width: 36px;
+}
+
+.crypto-rank {
+    width: 42px;
+}
+
+
+.crypto-icon {
+    width: 80px;
+}
+
+.crypto-name {
+    width: 200px;
+}
+
+.crypto-price {
+    width: 118px;
+    text-align: end;
+}
+
+.crypto-hourly-change {
+    width: 80px;
+    text-align: end;
+}
+
+
+.crypto-market-cap {
+    width: 170px;
+    text-align: end;
+}
+
+.crypto-color {
+    width: 180px;
+    text-align: end;
+}
+
+
+
+/**************JS LIST OF COINS **************/
+
+.tableJS {
+    width: 1402px;
+    height: 80px;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgray;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.tableJS:hover {
+    background-color: #F8FAFD;
+}
+
+.starJS {
+    width: 36px;
+    cursor: pointer;
+}
+
+.starJS:hover {
+    color: orange;
+}
+
+.crypto-rankJS {
+    width: 42px;
+}
+
+
+.crypto-iconJS {
+    width: 80px;
+    cursor: pointer;
+}
+
+.crypto-iconJS img {
+    width: 24px;
+}
+
+.crypto-nameJS {
+    width: 200px;
+    cursor: pointer;
+}
+
+.crypto-nameJS #symbol {
+    color: #808A9D;
+}
+
+.crypto-priceJS {
+    width: 118px;
+    text-align: end;
+}
+
+.crypto-hourly-changeJS {
+    width: 80px;
+    text-align: end;
+}
+
+
+.crypto-market-capJS {
+    width: 170px;
+    text-align: end;
+}
+
+.crypto-colorJS {
+    width: 180px;
+    text-align: end;
+    /* background-color: #f7931A; */
+}
